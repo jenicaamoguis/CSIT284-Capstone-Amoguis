@@ -1,29 +1,37 @@
+
 # X7 - Class Schedule / Timetable Viewer
 
-**Developer:** Philma Jenica B. Amoguis 
+**Developer:** Philma Jenica Amoguis  
 **Workstation Number:** #37  
-**Course:** CSIT284 - Platform-Based Development (Mobile)
+**Course:** CSIT284 - Platform-Based Mobile Development
 
 ## Project Description
 
-Class Schedule / Timetable Viewer is a Flutter mobile application designed to help students conveniently view their class schedules.
+The Class Schedule / Timetable Viewer is a Flutter mobile application designed to help students conveniently view their weekly class schedules.
 
-The application provides a weekly timetable, a home screen displaying today's classes, and reminders that notify students 10 minutes before their scheduled classes.
+It provides a dashboard displaying today's classes and a weekly timetable where students can select a specific day to view their scheduled subjects.
 
-## Core Features
+## Implemented Features
 
-- Today's Classes Dashboard
-- Weekly Class Timetable
-- Class Information (Subject, Time, Room, Instructor)
-- 10-Minute Class Reminders
-- Predefined Schedule Data
+- Home screen displaying today's classes
+- Weekly timetable from Monday to Saturday
+- Class information including subject, time, room, and instructor
+- Bottom navigation between Home and Timetable
+- Predefined sample schedule data
+- Responsive screen layouts
+
+## Planned Features
+
+- Class reminder notifications 10 minutes before class
+- Firebase integration for schedule data
 
 ## Technology Stack
 
 - Flutter
 - Dart
-- Firebase (planned backend integration)
+- Material 3
+- Firebase (planned integration)
 
 ## Project Scope
 
-This application focuses on one predefined class section. Schedules are provided through seed data, and users cannot add, edit, or delete schedules.
+This application focuses on one predefined class section. Schedules are provided through seed data. Users cannot add, edit, or delete schedules.
