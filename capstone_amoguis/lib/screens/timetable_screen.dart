@@ -23,15 +23,14 @@ class _TimetableScreenState extends State<TimetableScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final selectedSchedules = sampleSchedules
-        .where((schedule) => schedule.dayOfWeek == selectedDay)
-        .toList()
-      ..sort((a, b) => a.startMinutes.compareTo(b.startMinutes));
+    final selectedSchedules =
+        sampleSchedules
+            .where((schedule) => schedule.dayOfWeek == selectedDay)
+            .toList()
+          ..sort((a, b) => a.startMinutes.compareTo(b.startMinutes));
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Weekly Timetable'),
-      ),
+      appBar: AppBar(title: const Text('Weekly Timetable')),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
@@ -42,15 +41,13 @@ class _TimetableScreenState extends State<TimetableScreen> {
                 Text(
                   'Your Weekly Classes',
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
 
                 const SizedBox(height: 8),
 
-                const Text(
-                  'Select a day to view your scheduled classes.',
-                ),
+                const Text('Select a day to view your scheduled classes.'),
 
                 const SizedBox(height: 20),
 
@@ -79,9 +76,9 @@ class _TimetableScreenState extends State<TimetableScreen> {
 
                 Text(
                   _fullDayName(selectedDay),
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
                 ),
 
                 const SizedBox(height: 12),

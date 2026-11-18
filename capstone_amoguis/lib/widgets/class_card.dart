@@ -4,10 +4,7 @@ import '../models/class_schedule.dart';
 class ClassCard extends StatelessWidget {
   final ClassSchedule schedule;
 
-  const ClassCard({
-    super.key,
-    required this.schedule,
-  });
+  const ClassCard({super.key, required this.schedule});
 
   @override
   Widget build(BuildContext context) {
@@ -23,19 +20,15 @@ class ClassCard extends StatelessWidget {
           children: [
             Text(
               schedule.subject,
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 12),
 
             Row(
               children: [
-                Icon(
-                  Icons.access_time,
-                  size: 18,
-                  color: colorScheme.primary,
-                ),
+                Icon(Icons.access_time, size: 18, color: colorScheme.primary),
                 const SizedBox(width: 8),
                 Text('${schedule.startTime} - ${schedule.endTime}'),
               ],
@@ -65,9 +58,7 @@ class ClassCard extends StatelessWidget {
                   color: colorScheme.primary,
                 ),
                 const SizedBox(width: 8),
-                Expanded(
-                  child: Text(schedule.instructor),
-                ),
+                Expanded(child: Text(schedule.instructor)),
               ],
             ),
           ],
